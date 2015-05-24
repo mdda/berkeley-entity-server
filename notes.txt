@@ -1,1 +1,17 @@
 
+# download entity data from : 
+
+
+http://nlp.cs.berkeley.edu/projects/entity.shtml
+
+curl -O http://nlp.cs.berkeley.edu/downloads/berkeley-entity-models.tgz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  886M  100  886M    0     0   564k      0  0:26:46  0:26:46 --:--:-- 5044k
+
+[andrewsm@epoch complete]$ ls -l berkeley-entity-models.tgz 
+
+-rw-rw-r--. 1 andrewsm andrewsm 929073602 May 21 02:01 berkeley-entity-models.tgz
+
+
+
