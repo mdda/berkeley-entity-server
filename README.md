@@ -30,7 +30,8 @@ git clone https://github.com/gregdurrett/berkeley-entity.git
 ```
 
 Unless you need to alter the source code itself, all that this project 
-requires is the pre-compiled jar file:
+requires is the pre-compiled (15.2Mb) jar file contained in the 
+root of the 'berkeley-entity' repo :
 
 ```
 ls -l berkeley-entity/*.jar
@@ -38,3 +39,24 @@ ls -l berkeley-entity/*.jar
 
 ```
 
+If you do change the source, or would like to rebuild the jar from scratch,
+simply execute ```sbt``` in the 'berkeley-entity' repo root, then, in the ```sbt``` CLI : 
+
+```
+assembly
+# [info] Compiling 108 Scala sources and 15 Java sources to ... /target/scala-2.11/classes ...
+# ... berkeley-entity/target/scala-2.11/berkeley-entity-assembly-1.jar
+```
+
+This takes ~1 minute on a moderately specified laptop.
+
+```
+# Original, packaged jar :
+ls -l *.jar
+-rw-rw-r--. 1 andrewsm andrewsm 15287983 May 25 13:19 berkeley-entity-1.0.jar
+# New, rebuilt jar :
+ls -l target/scala-2.11/berkeley-entity-assembly-1.jar 
+-rw-rw-r--. 1 andrewsm andrewsm 15288485 May 25 13:35 target/scala-2.11/berkeley-entity-assembly-1.jar
+```
+
+Differences in scala versions, and downloaded libraries likely account for the differences.
