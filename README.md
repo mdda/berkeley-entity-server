@@ -61,3 +61,10 @@ ls -l target/scala-2.11/berkeley-entity-assembly-1.jar
 ```
 
 Differences in scala versions, and downloaded libraries likely account for the differences.
+
+Then, copy ```berkeley-entity-1.0.jar``` into this repo's ```lib``` folder, next
+to the placeholder file.
+
+
+
+
