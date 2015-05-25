@@ -18,7 +18,7 @@ curl -O http://nlp.cs.berkeley.edu/downloads/berkeley-entity-models.tgz
 
 # Upon completion :
 ls -l berkeley-entity-models.tgz 
--rw-rw-r--. 1 andrewsm andrewsm 929073602 May 21 02:01 berkeley-entity-models.tgz
+-rw-rw-r--. 929073602 May 21 02:01 berkeley-entity-models.tgz
 ```
 
 
@@ -35,7 +35,7 @@ root of the 'berkeley-entity' repo :
 
 ```
 ls -l berkeley-entity/*.jar
--rw-rw-r--. 1 andrewsm andrewsm 15287983 May 25 13:19 berkeley-entity/berkeley-entity-1.0.jar
+-rw-rw-r--. 15287983 May 25 13:19 berkeley-entity/berkeley-entity-1.0.jar
 
 ```
 
@@ -44,7 +44,8 @@ simply execute ```sbt``` in the 'berkeley-entity' repo root, then, in the ```sbt
 
 ```
 assembly
-# [info] Compiling 108 Scala sources and 15 Java sources to ... /target/scala-2.11/classes ...
+# [info] Compiling 108 Scala sources and 15 Java sources to 
+#        ... /target/scala-2.11/classes ...
 # ... berkeley-entity/target/scala-2.11/berkeley-entity-assembly-1.jar
 ```
 
@@ -53,10 +54,10 @@ This takes ~1 minute on a moderately specified laptop.
 ```
 # Original, packaged jar :
 ls -l *.jar
--rw-rw-r--. 1 andrewsm andrewsm 15287983 May 25 13:19 berkeley-entity-1.0.jar
+-rw-rw-r--. 15287983 May 25 13:19 berkeley-entity-1.0.jar
 # New, rebuilt jar :
 ls -l target/scala-2.11/berkeley-entity-assembly-1.jar 
--rw-rw-r--. 1 andrewsm andrewsm 15288485 May 25 13:35 target/scala-2.11/berkeley-entity-assembly-1.jar
+-rw-rw-r--. 15288485 May 25 13:35 target/scala-2.11/berkeley-entity-assembly-1.jar
 ```
 
 Differences in scala versions, and downloaded libraries likely account for the differences.
