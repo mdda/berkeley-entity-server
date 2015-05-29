@@ -66,5 +66,8 @@ Then, copy ```berkeley-entity-1.0.jar``` into this repo's ```lib``` folder, next
 to the placeholder file.
 
 
+### Useful resources
+
+https://github.com/chonger/ScalaFrontend
 
 
