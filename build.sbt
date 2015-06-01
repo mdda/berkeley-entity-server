@@ -18,7 +18,7 @@ crossPaths := false
 // This forbids including Scala related libraries into the dependency
 autoScalaLibrary := false
 
-// library dependencies. (orginization name) % (project name) % (version)
+// library dependencies. (organization name) % (project name) % (version)
 
 // These are for the SparkJava REST API piece
 libraryDependencies ++= Seq(
